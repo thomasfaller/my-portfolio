@@ -1,12 +1,24 @@
 {
-  "name": "sass-npm-portfolio",
+  "name": "sass-portfolio",
   "version": "1.0.0",
-  "description": "",
+  "description": "This is my portfolio built with Vanilla Javascript, Sass and HTML. It's meant to be a lightweight / responsive page displaying properly accross all devices / browsers. I'm showcasing my skills here for freelance missions as well as other professional opportunities.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "keywords": [
+    "npm",
+    "javascript",
+    "sass",
+    "scss",
+    "portfolio",
+    "projects",
+    "front-end"
+  ],
+  "author": "Thomas Faller",
+  "license": "ISC",
+  "dependencies": {
+    "gh-pages": "^2.0.1",
+    "node-sass": "^4.12.0"
+  }
 }
