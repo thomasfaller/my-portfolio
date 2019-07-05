@@ -1,5 +1,6 @@
 @import "config";
 @import "menu";
+@import "mobile";
 
 // main.scss
 
@@ -13,7 +14,7 @@ body {
   color: white;
   height: 100%;
   margin: 0;
-  font-family: "Open Sans", sans-serif;
+  font-family: $main-font;
   line-height: $line-height;
 }
 
