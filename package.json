@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "description": "This is my portfolio built with Vanilla Javascript, Sass and HTML. It's meant to be a lightweight / responsive page displaying properly accross all devices / browsers. I'm showcasing my skills here for freelance missions as well as other professional opportunities.",
   "main": "index.js",
+  "homepage": "https://thomasfaller.github.io/my-portfolio",
   "scripts": {
-    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive --output-style compressed",
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [
     "npm",
