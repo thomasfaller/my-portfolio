@@ -8,8 +8,8 @@ $main-font-weight: 300;
 // $main-font: "Open Sans", sans-serif;
 $main-font: "Roboto", sans-serif;
 $portrait-image: url("../img/portrait_achillIsland_bw.png");
-$primary-color: #17223b;
-$secondary-color: #ff6768;
+$primary-color: #313131;
+$secondary-color: #ca3e47;
 $show-home-image: true;
 
 @mixin background {
@@ -65,6 +65,15 @@ $show-home-image: true;
     #fbd786,
     #c6ffdd
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+// Set Text Color
+@function set-text-color($color) {
+  @if (lightness($color) > 40) {
+    @return #333;
+  } @else {
+    @return #fff;
+  }
 }
 
 // Media Query Mixins

@@ -1,9 +1,19 @@
 // Widescreen
 @include mediaXl {
+  #work {
+    .projects {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
 }
 
 // Desktops & Laptops
 @include mediaLg {
+  #work {
+    .projects {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
 }
 
 // Tablets and small laptops
@@ -45,6 +55,25 @@
       height: 150px;
     }
   }
+
+  #about {
+    .about-info {
+      grid-template-areas:
+        "bioimage"
+        "bio"
+        "job1"
+        "job2"
+        "job3";
+
+      grid-template-columns: 1fr;
+    }
+  }
+
+  #work {
+    .projects {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
 }
 
 // Smartphones
@@ -56,6 +85,12 @@
     }
     .sm-heading {
       font-size: 1.125rem;
+    }
+  }
+
+  #work {
+    .projects {
+      grid-template-columns: 1fr;
     }
   }
 }
