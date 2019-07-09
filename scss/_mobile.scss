@@ -18,11 +18,12 @@
 
 // Tablets and small laptops
 @include mediaMd {
-  main {
+  main#home {
     align-items: center;
     text-align: center;
 
-    .lg-heading {
+    h1.lg-heading {
+      margin-top: 10vh;
       line-height: 1;
       margin-bottom: 1rem;
     }
@@ -78,19 +79,88 @@
 
 // Smartphones
 @include mediaSm {
+  main {
+    padding: 2.25rem;
+  }
+  header {
+    .menu {
+      opacity: 1;
+    }
+
+    .menu-nav {
+      height: 65vh;
+    }
+
+    .menu-branding {
+      height: 35vh;
+      .portrait {
+        width: 120px;
+        height: 120px;
+      }
+    }
+  }
+
   #home {
     .lg-heading {
-      font-size: 4rem;
-      margin-top: 18vh;
+      font-size: 3rem;
+      // margin-top: 15vh;
     }
     .sm-heading {
-      font-size: 1.125rem;
+      font-size: 1.25rem;
+    }
+
+    .icons {
+      margin-top: 7vh;
+      display: grid;
+      grid-gap: 12px;
+      grid-template-columns: repeat(3, 1fr);
+
+      i {
+        font-size: 3rem;
+      }
+    }
+  }
+
+  #about {
+    padding: 2.25rem;
+
+    h1.lg-heading {
+      text-align: center;
+      font-size: 2.75rem;
+    }
+
+    h2.sm-heading {
+      display: none;
+    }
+
+    div.about-info {
+      margin-top: 5vh;
+
+      .bio {
+        font-size: 1.125rem;
+      }
+
+      img.bio-image {
+        width: 190px;
+        height: 190px;
+      }
     }
   }
 
   #work {
+    h1.lg-heading {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+    h2.sm-heading {
+      font-size: 1.25rem;
+    }
     .projects {
       grid-template-columns: 1fr;
+
+      .item {
+        margin: 1rem 0;
+      }
     }
   }
 }

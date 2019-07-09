@@ -22,11 +22,11 @@ $show-home-image: true;
       &:after {
         background: rgba($primary-color, $background-opacity);
         content: "";
-        height: 100%;
+        height: 100vh;
         position: absolute;
         right: 0;
         top: 0;
-        width: 100%;
+        width: 100vw;
         z-index: -1;
       }
     }
