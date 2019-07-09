@@ -163,4 +163,23 @@
       }
     }
   }
+
+  #contact {
+    h1.lg-heading {
+      margin-top: 4rem;
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+    h2.sm-heading {
+      font-size: 1.25rem;
+    }
+
+    .boxes {
+      div {
+        max-width: 95vw;
+
+        font-size: 1.25rem;
+      }
+    }
+  }
 }
